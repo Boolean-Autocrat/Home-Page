@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<title>Antheneum</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<section style="height: 100vh;position: relative;">
+<!--Add all the content along with the css elements here-->
+  <div class="para">
+    <span class="header">Atheneum</span><br>
+    <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </span>
+  </div>
+<!--You need to fix the CSS elements a little bit.-->
+<style>
+  .header{
+    font-size: 3vw;
+    font-family: 'Teko', sans-serif;
+    color: #3effda;
+}
+
+.text{
+	font-size: 1vw;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.para{
+	width: 50%;
+    border-left-style: solid;
+    border-width: 7px;
+    border-color: white;
+	background-color: rgba(3,21,36,0.8);
+	margin: 0;
+	padding: 5vw;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+</style>
+</section>
+<!---Add you background image here, don't mess with anything else-->
+<style>
+  body {
+    background-image: url('old_library.jpg'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+</style>
+<!--This is the link to the style sheet-->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Blue Pond.jpg" style="width:100%">
+  <div class="text">Caption 1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Bristle Grass.jpg" style="width:100%">
+  <div class="text">Caption 2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Yosemite 5.jpg" style="width:100%">
+  <div class="text">Caption 3</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script src="script.js"></script>
+</body>
+</html> 
